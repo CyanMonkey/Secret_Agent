@@ -1,0 +1,25 @@
+html {
+  font-size: 18px;
+  font-family: helvetica;
+}
+header {
+  background-color: black;
+  color: white;
+  width: 960px;
+}
+ .motorcycle {
+   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+   height: 25rem;
+   width: 100%;
+   background-size: cover;
+ }
+ .motorcycle div {
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   width: 20rem;
+   padding: 2rem 3rem;
+ }
+ .sport_bikes {
+   font-size: 2rem;
+ }
