@@ -1,13 +1,16 @@
 html {
   font-size: 18px;
   font-family: helvetica;
+  color: white;
+  
 }
 header {
   background-color: black;
-  color: white;
-  width: 960px;
+  /*flex commands*/
+  display: flex;
+  align-items: center;
 }
- .motorcycle {
+ .main_banner {
    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
    height: 25rem;
    width: 100%;
@@ -23,3 +26,19 @@ header {
  .sport_bikes {
    font-size: 2rem;
  }
+.gadgets {
+  width: 960px;
+  height: 2.5rem;
+  background-color: firebrick;
+  /*flex commands*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+li {
+  width:80px;
+  /*flex commands*/
+  display: flex;
+  justify-content: space-around;
+}
