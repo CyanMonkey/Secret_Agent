@@ -2,9 +2,7 @@ html {
   font-size: 18px;
   font-family: helvetica;
   color: white;
-  border: solid 1px;
 }
-
 header {
   background-color: black;
   /*flex commands*/
@@ -13,28 +11,27 @@ header {
   height: 3rem;
 }
 header img {
-height: 1.5rem;
-padding: 0rem 1rem 0rem .5rem;
+   height: 1.5rem;
+   padding: 0rem 1rem 0rem .5rem;
 }
- #main_banner {
-   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+banner {
+   background-image: url("D:/Projects/Secret_agent/resources/media/MainBanner.jpg");
    height: 25rem;
    width: 100%;
    background-size: cover;
    display: flex;
    align-items: center;
  }
- #main_banner div {
+ banner div {
    background-color: black;
    font-weight: bold;
    width: 20rem;
    padding: 2rem 3rem;
  }
- .sport_bikes {
+ banner .large_text {
    font-size: 2rem;
  }
- /*navigation*/
-.gadgets {
+nav {
   height: 2.5rem;
   background-color: firebrick;
   /*flex commands*/
@@ -43,22 +40,25 @@ padding: 0rem 1rem 0rem .5rem;
   align-items: center;
   justify-content: space-around;
 }
-li {
+nav li {
   width:80px;
   /*flex commands*/
   display: flex;
   justify-content: space-around;
+ }
+nav .tablets_phone {
+  display: none;
 }
-.pic_gadgets {
+section {
   padding-top: 3rem;
+  /*flex commands*/
   display: flex;
   justify-content: space-around;
 }
-.pic_gadgets .container {
+section .container {
   background-color: black;
   border: solid 4px;
   border-color: black;
-  width: 30%;
   height:14rem;
   /*flex commands*/
   display: flex;
@@ -66,22 +66,22 @@ li {
   align-items: center;
   flex-direction: column;
 }
-.image {
+section .image {
   background-color: white;
   height: 9rem;
   width: 9rem;
   background-size: cover;
 }
-.pic_gadgets .item_pen {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png");
+section .item_pen {
+  background-image: url("D:/Projects/Secret_agent/resources/media/pen.png");
 }
-.pic_gadgets .item_glasses {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png");
+section .item_glasses {
+  background-image: url("D:/Projects/Secret_agent/resources/media/pen.png");
 }
-.pic_gadgets .item_watch {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/watch.png");
+section .item_watch {
+  background-image: url("D:/Projects/Secret_agent/resources/media/watch.png");
 }
-.name {
+section .item {
   height:12rem;
   width:100%;
   background-color: white;
@@ -90,18 +90,21 @@ li {
   justify-content: center;
   align-items: center;
 }
+section .special {
+  /*needs better name XD*/
+  width: 30%;
+}
+
 .location {
   padding-top: 3rem;
+  padding-bottom: 4rem;
   /*flex commands*/
   display: flex;
   justify-content: space-around;
-  padding-bottom: 4rem;
 }
 .location .container{
-  background-color: white;
   color: black;
   width: 35%;
-  height: 3rem;
 }
 .location .item {
   background-color: black;
@@ -117,14 +120,52 @@ footer {
   background-color: black;
   display: flex;
   align-items: center;
+  text-align: left;
 }
 @media only screen and (max-width: 1024px) {
-  .pic_gadgets .container{
+  section .special{
     width: 47%;
   }
-  .test2 {
-
+  .section1 {
     display: none;
   }
+  nav .desktop {
+    display: none;
+  }
+  nav {
+    /*centers menu*/
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 470px) {
+  section .special {
+    width: 90%;
+  }
+  .section1, .section2 {
+    display: none;
+  }
+  banner {
+    height: 15rem;
+  }
+  banner .large_text {
+    /*smaller text*/
+    font-size: 1rem;
+  }
+  banner div {
+    font-size: 0.77rem;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .location .container {
+    width: 90%;
+  }
+  footer {
+    text-align: center;
 
+  }
 }
